@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+nav {
+  padding: 20px !important;
+}
+
+.clock {
+  border: 1px solid #606060;
+  color: white;
+  padding: 7px;
+  border-radius: 10px;
+  background-color: #222222;
+  height: 45px;
+  position: relative;
+  font-size: 16px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url(images/BG-Blured.png);
+}
+.container {
+  max-width: 100%;
+  opacity: 0.7;
+  animation: fadeDown 1s ease forwards;
+}
+
+.row {
+  max-width: 100%;
+}
+
+.card-table {
+  overflow-x: scroll !important;
+}
+
+#data_wrapper .dt-search {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+#data #pengaturan {
+  width: 15% !important;
+}
+
+.btn-light {
+  border: 1px solid #212529;
+}
+
+.card {
+  opacity: 0.8 !important;
+}
+
+.clock {
+  color: #17d4fe;
+  font-size: 23px;
+  letter-spacing: 1px;
+  margin-top: -5px;
+  float: right;
+}
+
+.btn-delete {
+  margin-left: 5px;
+}
+
+thead tr th,
+tbody tr td {
+  text-align: left !important;
+}
+
+.dt-empty {
+  text-align: center !important;
+}
+
+.cursor {
+  z-index: 999;
+  position: fixed;
+  background: #2696e8;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px #2696e8, 0 0 60px #2696e8, 0 0 100px #2696e8;
+  animation: colors 5s infinite;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+@keyframes colors {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.cursor:before {
+  content: "";
+  position: absolute;
+  background: #2696e8;
+  width: 40px;
+  height: 40px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}
+
+#rose {
+  float: left;
+  padding-left: 5px;
+}
+
+#greetings {
+  float: left;
+}
+
+/* Add this CSS code to styles.css */
+#dark-mode ::-webkit-input-placeholder {
+  /* WebKit/Blink browsers */
+  color: #ffffff; /* White color for the placeholder text */
+}
+
+#dark-mode :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ffffff; /* White color for the placeholder text */
+}
+
+#dark-mode ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ffffff; /* White color for the placeholder text */
+}
+
+#dark-mode :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ffffff; /* White color for the placeholder text */
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 992px) {
+  .clock {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+}
