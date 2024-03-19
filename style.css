@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  background-image: url("images/Blured.png");
+  background-image: url("images/money.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@
 }
 
 .side-image {
-  background-image: url("images/data.png");
+  background-image: url("images/moneytrackerbanner.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

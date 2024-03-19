@@ -69,6 +69,14 @@ body {
   margin-left: 5px;
 }
 
+.bg-income {
+  background-color: lightgreen !important;
+}
+
+.bg-outcome {
+  background-color: #d37676 !important;
+}
+
 thead tr th,
 tbody tr td {
   text-align: left !important;

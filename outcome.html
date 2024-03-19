@@ -102,10 +102,10 @@
                 <a class="nav-link" href="index.html">Main </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="income.html">Income</a>
+                <a class="nav-link" href="income.html">Income</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="outcome.html">Outcome</a>
+                <a class="nav-link active" href="outcome.html">Outcome</a>
               </li>
               <li class="nav-item" style="margin-right: 6px">
                 <a class="nav-link" href="aboutus.html">About Us</a>
@@ -130,7 +130,7 @@
         <div class="col-md-12">
           <div class="card bg-light mb-3 mt-2">
             <div class="card-header d-flex justify-content-between" id="above">
-              <h3>Transaction <span style="color: green">Income</span> Form</h3>
+              <h3>Transaction <span style="color: red">Outcome</span> Form</h3>
             </div>
             <div class="card-body" style="padding-top: 15px">
               <form id="form">
@@ -183,7 +183,7 @@
                 </button>
                 <button type="submit" id="submit" class="btn btn-primary mt-3">
                   <i class="fa fa-plus" aria-hidden="true"></i> Add Transaction
-                  Income
+                  Outcome
                 </button>
               </form>
             </div>
@@ -274,7 +274,7 @@
 
         if (!transactionName || !transactionType || transactionNominal <= 0) {
           Swal.fire({
-            title: "Transaction income cannot be added!",
+            title: "Transaction Outcome cannot be added!",
             text: "Please fill in the required information.",
             icon: "error",
           });
@@ -289,16 +289,16 @@
           "#" +
           transactionType +
           "#" +
-          transactionNominal +
+          transactionNominal * -1 +
           "#" +
-          "income" +
+          "outcome" +
           "#" +
           dateTime;
         localStorage.setItem("transactiondata_" + timestamp, transactionData);
 
         Swal.fire({
           title: "Added Successfully!",
-          text: "Transaction income has been added successfully.",
+          text: "Transaction Outcome has been added successfully.",
           icon: "success",
         });
         $("#form").trigger("reset");
